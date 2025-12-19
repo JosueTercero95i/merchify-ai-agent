@@ -7,14 +7,39 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.pnp
+.pnp.js
+
+# Build outputs
 dist
 dist-ssr
+build
 *.local
+
+# Environment variables - PROTEGER DATOS SENSIBLES
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Supabase
+.supabase
+supabase/.temp
+supabase/.branches
+
+# Testing
+coverage
+*.lcov
+.nyc_output
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 *.suo
@@ -22,3 +47,49 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OS files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Cache
+.cache
+.parcel-cache
+.next
+.nuxt
+.vuepress/dist
+
+# Temporary files
+tmp
+temp
+*.tmp
+
+# Lock files (opcional - descomenta si no quieres subirlos)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+
+# Local storage backups
+*.localstorage
+localStorage.json
+
+# Credentials and secrets
+*.pem
+*.key
+*.cert
+secrets.json
+credentials.json
+config.local.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Misc
+.vercel
+.turbo
